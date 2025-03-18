@@ -2,18 +2,25 @@
 <html lang="el">
 <head>
   <meta charset="UTF-8">
-  <title>Εκστρατείες Μεγάλου Αλεξάνδρου - Διαδραστικό Χρονολόγιο</title>
+  <title>Η κατάκτηση της Ανατολής από τον Αλέξανδρο</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
       margin: 0 auto;
-      max-width: 900px;
+      max-width: 1000px;
       padding: 20px;
-      background-color: #f9f9f9;
+      background-color: #000;
+      color: #FFD700;
+      text-align: center;
     }
 
     h1 {
-      text-align: center;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .author {
+      font-size: 1.2em;
       margin-bottom: 20px;
     }
 
@@ -21,8 +28,8 @@
       position: relative;
       margin: auto;
       overflow: hidden;
-      background: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background: #111;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
       border-radius: 5px;
       max-width: 900px;
       padding: 20px;
@@ -35,14 +42,12 @@
 
     .slide h2 {
       margin: 10px 0;
-      font-size: 1.4em;
-      color: #333;
+      font-size: 1.5em;
     }
 
     .slide p {
-      font-size: 1em;
+      font-size: 1.1em;
       line-height: 1.6;
-      color: #555;
       margin-bottom: 10px;
     }
 
@@ -51,6 +56,7 @@
       height: auto;
       border-radius: 5px;
       margin-bottom: 15px;
+      border: 2px solid #FFD700;
     }
 
     .prev, .next {
@@ -60,13 +66,13 @@
       border: none;
       border-radius: 3px;
       font-size: 1em;
-      background-color: #333;
-      color: #fff;
+      background-color: #FFD700;
+      color: #000;
       transition: background-color 0.3s;
     }
 
     .prev:hover, .next:hover {
-      background-color: #666;
+      background-color: #daa520;
     }
 
     .dot-container {
@@ -79,71 +85,62 @@
       height: 15px;
       width: 15px;
       margin: 0 5px;
-      background-color: #ccc;
+      background-color: #FFD700;
       border-radius: 50%;
       display: inline-block;
       transition: background-color 0.3s;
     }
 
     .active, .dot:hover {
-      background-color: #333;
-    }
-
-    @media (max-width: 768px) {
-      .prev, .next {
-        font-size: 0.9em;
-        margin: 5px;
-      }
-      .slideshow-container {
-        padding: 10px;
-      }
+      background-color: #daa520;
     }
   </style>
 </head>
 <body>
 
-  <h1>Εκστρατείες Μεγάλου Αλεξάνδρου</h1>
+  <div class="author">Δημιουργία: Παναγιώτης Δόμβρος 2025 (CC BY-NC)</div>
+  <h1>Η κατάκτηση της Ανατολής από τον Αλέξανδρο</h1>
 
   <div class="slideshow-container">
 
     <div class="slide">
-      <img src="1-334 π.Χ. - Έναρξη Εκστρατείας στην Ασία Μικρά.webp" alt="334 π.Χ.">
+      <img src="1-334 π.Χ. - Έναρξη Εκστρατείας στην Ασία Μικρά.jpg" alt="334 π.Χ.">
       <h2>334 π.Χ. - Έναρξη Εκστρατείας</h2>
       <p>Ο Αλέξανδρος ξεκινά την εκστρατεία του κατά της Περσικής Αυτοκρατορίας, περνά στην Ασία Μικρά και νικά στη Μάχη του Γρανικού.</p>
     </div>
 
     <div class="slide">
-      <img src="2-333 π.Χ. - Μάχη της Ισσού.webp" alt="333 π.Χ.">
+      <img src="2-333 π.Χ. - Μάχη της Ισσού.jpg" alt="333 π.Χ.">
       <h2>333 π.Χ. - Μάχη της Ισσού</h2>
       <p>Ο Αλέξανδρος νικά τον Δαρείο Γ’ στην Ισσό. Ανοίγει ο δρόμος για Συρία και Φοινίκη.</p>
     </div>
 
     <div class="slide">
-      <img src="3-332 π.Χ. - Πολιορκία Τύρου και Αίγυπτος.webp" alt="332 π.Χ.">
+      <img src="3-332 π.Χ. - Πολιορκία Τύρου και Αίγυπτος.jpg" alt="332 π.Χ.">
       <h2>332 π.Χ. - Πολιορκία Τύρου και Αίγυπτος</h2>
       <p>Κατάληψη Τύρου και είσοδος στην Αίγυπτο, ίδρυση της Αλεξάνδρειας.</p>
     </div>
 
     <div class="slide">
-      <img src="4-331 π.Χ. - Μάχη στα Γαυγάμηλα.webp" alt="331 π.Χ.">
+      <img src="4-331 π.Χ. - Μάχη στα Γαυγάμηλα.jpg" alt="331 π.Χ.">
       <h2>331 π.Χ. - Μάχη στα Γαυγάμηλα</h2>
       <p>Καθοριστική νίκη που οδηγεί στην κατάληψη Βαβυλώνας, Σούσας και Περσέπολης.</p>
     </div>
 
     <div class="slide">
-      <img src="5-330-327 π.Χ. - Πορεία σε Βακτρία και Σογδιανή.webp" alt="330-327 π.Χ.">
+      <img src="5-330-327 π.Χ. - Πορεία σε Βακτρία και Σογδιανή.jpg" alt="330-327 π.Χ.">
       <h2>330-327 π.Χ. - Πορεία σε Βακτρία και Σογδιανή</h2>
       <p>Συνέχιση της εκστρατείας προς ανατολάς, δημιουργία πόλεων και συγχώνευση πολιτισμών.</p>
     </div>
 
     <div class="slide">
-      <img src="6-326 π.Χ. - Εκστρατεία στην Ινδία, ποταμός Ύδρασπης.webp" alt="326 π.Χ.">
+      <img src="6-326 π.Χ. - Εκστρατεία στην Ινδία, ποταμός Ύδρασπης.jpg" alt="326 π.Χ.">
       <h2>326 π.Χ. - Εκστρατεία στην Ινδία</h2>
       <p>Μάχη στον Ύδρασπη, νίκη επί του Πώρου και επιστροφή μέσω Γεδρωσίας.</p>
     </div>
 
     <div class="slide">
-      <img src="7-324-323 π.Χ. - Επιστροφή και θάνατος στη Βαβυλώνα.webp" alt="324-323 π.Χ.">
+      <img src="7-324-323 π.Χ. - Επιστροφή και θάνατος στη Βαβυλώνα.jpg" alt="324-323 π.Χ.">
       <h2>324-323 π.Χ. - Επιστροφή και Θάνατος</h2>
       <p>Ο Αλέξανδρος πεθαίνει στη Βαβυλώνα, αφήνοντας πίσω του μια εκτεταμένη αυτοκρατορία.</p>
     </div>
@@ -198,4 +195,3 @@
 
 </body>
 </html>
-
