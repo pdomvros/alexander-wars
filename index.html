@@ -204,7 +204,7 @@
       dots[slideIndex - 1].className += ' active';
     }
 
-    //=== CITY DATA: ΟΛΕΣ ΟΙ ΠΕΡΙΟΧΕΣ ===
+    //=== CITY DATA: >4 περιοχές σε κάθε slide ===
     const citiesData = {
       "slide1": [
         {
@@ -226,10 +226,22 @@
           "map": "https://maps.google.com/maps?q=Biga%20Çayı&output=embed"
         },
         {
-          "name": "Έφεσος", 
+          "name": "Έφεσος",
           "history": "Μεγάλη ιωνική πόλη, κρίσιμη για την εκστρατεία.",
           "today": "Ερείπια κοντά στο Σελτσούκ, Τουρκία.",
           "map": "https://maps.google.com/maps?q=Ephesus%20Turkey&output=embed"
+        },
+        {
+          "name": "Σμύρνη",
+          "history": "Μία ακόμη σπουδαία ιωνική πόλη της Μ. Ασίας.",
+          "today": "Σύγχρονη Σμύρνη (Izmir), Τουρκία.",
+          "map": "https://maps.google.com/maps?q=Izmir%20Turkey&output=embed"
+        },
+        {
+          "name": "Πέργαμος",
+          "history": "Σημαντικό κέντρο στην Άνω Μυσία, μεταγενέστερα βασίλειο των Ατταλιδών.",
+          "today": "Bergama, Τουρκία.",
+          "map": "https://maps.google.com/maps?q=Bergama%20Turkey&output=embed"
         }
       ],
       "slide2": [
@@ -247,9 +259,21 @@
         },
         {
           "name": "Ταρσός",
-          "history": "Πόλη της Κιλικίας όπου προετοιμάστηκαν κινήσεις του Αλέξανδρου.",
+          "history": "Πόλη της Κιλικίας, έδρα προετοιμασίας στρατιωτικών κινήσεων.",
           "today": "Σύγχρονη Tarsus, Τουρκία.",
           "map": "https://maps.google.com/maps?q=Tarsus%20Turkey&output=embed"
+        },
+        {
+          "name": "Σόλοι",
+          "history": "Αρχαία κωμόπολη στην Κιλικία, κατά τον Στράβωνα.",
+          "today": "Kilikia, Τουρκία (Περιοχή Mersin).",
+          "map": "https://maps.google.com/maps?q=Mersin%20Turkey&output=embed"
+        },
+        {
+          "name": "Άδανα",
+          "history": "Μεγάλη πόλη στην Κιλικία, υπό περσικό έλεγχο ως την άφιξη του Αλέξανδρου.",
+          "today": "Adana, Τουρκία.",
+          "map": "https://maps.google.com/maps?q=Adana%20Turkey&output=embed"
         }
       ],
       "slide3": [
@@ -276,6 +300,18 @@
           "history": "Αρχαία πρωτεύουσα της Αιγύπτου, υποτάχθηκε στον Αλέξανδρο.",
           "today": "Αρχαιολογικός χώρος νότια του Καΐρου.",
           "map": "https://maps.google.com/maps?q=Memphis%20Egypt&output=embed"
+        },
+        {
+          "name": "Πελουσίο",
+          "history": "Στρατηγική πόλη-πέρασμα στα ανατολικά σύνορα της Αιγύπτου.",
+          "today": "Ερείπια κοντά στο Port Said, Αίγυπτος.",
+          "map": "https://maps.google.com/maps?q=Pelusium%20Egypt&output=embed"
+        },
+        {
+          "name": "Φάρος (νησί)",
+          "history": "Σημείο όπου αργότερα χτίστηκε ο Φάρος της Αλεξάνδρειας.",
+          "today": "Ενσωματωμένο στις ακτές της Αλεξάνδρειας, Αίγυπτος.",
+          "map": "https://maps.google.com/maps?q=Pharos%20Alexandria&output=embed"
         }
       ],
       "slide4": [
@@ -308,6 +344,12 @@
           "history": "Φημισμένη πόλη των Μήδων, μεταγενέστερα κατελήφθη.",
           "today": "Χαμεντάν, Ιράν.",
           "map": "https://maps.google.com/maps?q=Hamadan%20Iran&output=embed"
+        },
+        {
+          "name": "Οπις",
+          "history": "Βόρεια της Βαβυλώνας, τόπος σημαντικών διοικητικών μεταρρυθμίσεων.",
+          "today": "Κοντά στον Τίγρη, Ιράκ (στα περίχωρα της Βαγδάτης).",
+          "map": "https://maps.google.com/maps?q=Tigris%20near%20Baghdad&output=embed"
         }
       ],
       "slide5": [
@@ -334,6 +376,12 @@
           "history": "Η άλλοτε πρωτεύουσα της Βακτρίας.",
           "today": "Μπαλχ, Αφγανιστάν.",
           "map": "https://maps.google.com/maps?q=Balkh%20Afghanistan&output=embed"
+        },
+        {
+          "name": "Αλεξάνδρεια Εσχάτη",
+          "history": "Πιο ανατολική Αλεξάνδρεια που ίδρυσε ο Αλέξανδρος.",
+          "today": "Σύγχρονη Khujand, Τατζικιστάν.",
+          "map": "https://maps.google.com/maps?q=Khujand%20Tajikistan&output=embed"
         }
       ],
       "slide6": [
@@ -360,6 +408,12 @@
           "history": "Ευρύτερη περιοχή με πολλούς ποταμούς.",
           "today": "Βόρειο Πακιστάν και Ινδία.",
           "map": "https://maps.google.com/maps?q=Punjab&output=embed"
+        },
+        {
+          "name": "Βουκεφάλα",
+          "history": "Πόλη που ίδρυσε ο Αλέξανδρος προς τιμήν του αλόγου του, Βουκεφάλα.",
+          "today": "Περιοχή κοντά στον ποταμό Hydaspes (Jhelum).",
+          "map": "https://maps.google.com/maps?q=Jhelum%20Pakistan&output=embed"
         }
       ],
       "slide7": [
@@ -380,6 +434,18 @@
           "history": "Μία ακόμη στάση στην επιστροφή του Αλέξανδρου.",
           "today": "Χαμεντάν, Ιράν.",
           "map": "https://maps.google.com/maps?q=Hamadan%20Iran&output=embed"
+        },
+        {
+          "name": "Περσέπολη (επανεπίσκεψη)",
+          "history": "Πέρασε ξανά από την άλλοτε περσική πρωτεύουσα;",
+          "today": "Αρχαιολογικός χώρος στο Ιράν.",
+          "map": "https://maps.google.com/maps?q=Persepolis%20Iran&output=embed"
+        },
+        {
+          "name": "Πάραλος Περσικού Κόλπου",
+          "history": "Διέλευση μέρους του στρατού από τις ακτές του Περσικού Κόλπου.",
+          "today": "Νοτιοδυτικό Ιράν / ΝΑ Ιράκ.",
+          "map": "https://maps.google.com/maps?q=Persian%20Gulf&output=embed"
         }
       ]
     };
